@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Galeria Javascript</title>
+    <style>
+        body{
+            background-color:antiquewhite;
+            display: grid;
+            place-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            text-align: center;
+            width: 100%;
+        }
+        .container .img-thumbnail{
+            width: 180px;
+        }
+        .container .img-thumbnail:hover{
+            width: 190px;
+        }
+        .modal-body img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img src="./1200x1200bf-60.jpg" alt="" class="img-thumbnail">
+        <img src="./37i9dQZF1DZ06evO0ZEzAK-default.jpg" alt="" class="img-thumbnail">
+        <img src="./6d631d04e40c8acbebb403c255660e28.1000x1000x1.jpg" alt="" class="img-thumbnail">
+        <img src="./ab67616d0000b27349218a0c3e414504cd661ca6.jpg" alt="" class="img-thumbnail">
+        <img src="./artworks-11FCttalMZ7Z-0-t500x500.jpg" alt="" class="img-thumbnail">
+        <img src="./channels4_profile.jpg" alt="" class="img-thumbnail">
+    </div>
+    <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+    <div class="modal-dialog modal-dialog-centered modal">
+      <div class="modal-content text-white">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./galeria.js"></script>
+</body>
+</html>
